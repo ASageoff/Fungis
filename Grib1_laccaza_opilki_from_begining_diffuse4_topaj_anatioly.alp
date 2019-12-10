@@ -121,7 +121,7 @@
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties External="false" Constant="false" Array="false">
-						<Formula><![CDATA[S_flac_m/M_V]]></Formula>
+						<Formula><![CDATA[Sub_flac_m/V_m]]></Formula>
 						<Color>-16711936</Color>
 					</Properties>
 
@@ -136,7 +136,7 @@
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties External="false" Constant="false" Array="false">
-						<Formula><![CDATA[S_flac_с/C_V]]></Formula>
+						<Formula><![CDATA[Sub_flac_с/C_V]]></Formula>
 						<Color>-16711936</Color>
 					</Properties>
 
@@ -152,21 +152,21 @@
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties External="false" Constant="false" Array="false">
-						<Formula><![CDATA[C_V*C_lyg__Ro]]></Formula>
+						<Formula><![CDATA[C_V*Ro_lyg__с]]></Formula>
 						<Color/>
 					</Properties>
 
 				</Variable>
 				<Variable Class="AuxVariable">
 					<Id>1575216020026</Id>
-					<Name><![CDATA[M_V]]></Name>
+					<Name><![CDATA[V_m]]></Name>
 					<X>170</X><Y>460</Y>
 					<Label><X>10</X><Y>-20</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties External="false" Constant="false" Array="false">
-						<Formula><![CDATA[M_W/M_Ro]]></Formula>
+						<Formula><![CDATA[W_m/Ro_m]]></Formula>
 						<Value><![CDATA[0]]></Value>
 						<Color/>
 					</Properties>
@@ -174,7 +174,7 @@
 				</Variable>
 				<Variable Class="AuxVariable">
 					<Id>1575837744375</Id>
-					<Name><![CDATA[M_W]]></Name>
+					<Name><![CDATA[W_m]]></Name>
 					<Description><![CDATA[Масса мицелия]]></Description>
 					<Unit>г</Unit> 
 					<X>80</X><Y>460</Y>
@@ -191,7 +191,7 @@
 				</Variable>
 				<Variable Class="AuxVariable">
 					<Id>1575838071428</Id>
-					<Name><![CDATA[S_lyg_sub_C]]></Name>
+					<Name><![CDATA[Sq_lyg_sub_C]]></Name>
 					<Description><![CDATA[Площадь активной поверхности опилок]]></Description>
 					<Unit>метр*метр</Unit> 
 					<X>450</X><Y>150</Y>
@@ -200,7 +200,7 @@
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties External="false" Constant="false" Array="false">
-						<Formula><![CDATA[C_lyg_sub_W /RoS_C]]></Formula>
+						<Formula><![CDATA[C_lyg_sub_W /RoSq_C]]></Formula>
 						<Value><![CDATA[0]]></Value>
 						<Color/>
 					</Properties>
@@ -208,7 +208,7 @@
 				</Variable>
 				<Variable Class="AuxVariable">
 					<Id>1575838140488</Id>
-					<Name><![CDATA[S_M]]></Name>
+					<Name><![CDATA[Sq_M]]></Name>
 					<Description><![CDATA[Площадь активной поверхности мицелия]]></Description>
 					<Unit>метр*метр</Unit> 
 					<X>250</X><Y>150</Y>
@@ -217,7 +217,7 @@
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties External="false" Constant="false" Array="false">
-						<Formula><![CDATA[M_W/RoS_M]]></Formula>
+						<Formula><![CDATA[W_m/RoSq_M]]></Formula>
 						<Value><![CDATA[0]]></Value>
 						<Color/>
 					</Properties>
@@ -233,7 +233,7 @@
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties External="false" Constant="false" Array="false">
-						<Formula><![CDATA[S_M*S_lyg_sub_C/(S_M + C_lyg_sub_S)]]></Formula>
+						<Formula><![CDATA[Sq_M*Sq_lyg_sub_C/(Sq_M + C_lyg_sub_S)]]></Formula>
 						<Value><![CDATA[0]]></Value>
 						<Color/>
 					</Properties>
@@ -241,7 +241,7 @@
 				</Variable>
 				<Variable Class="StockVariable">
 					<Id>1574190138529</Id>
-					<Name><![CDATA[S_flac_m]]></Name>
+					<Name><![CDATA[Sub_flac_m]]></Name>
 					<Description><![CDATA[масса ферманта лаказы внутри мицелия гриба, которыая будет перетекать в опилку]]></Description>
 					<Unit>грамм</Unit> 
 					<X>170</X><Y>270</Y>
@@ -260,7 +260,7 @@
 				</Variable>
 				<Variable Class="StockVariable">
 					<Id>1574190138531</Id>
-					<Name><![CDATA[S_flac_с]]></Name>
+					<Name><![CDATA[Sub_flac_с]]></Name>
 					<Description><![CDATA[масса ферманта лаказы внутри опилки
 для параметризации используем: maobing tu  hydrolyses of lygmyncellulose
 
@@ -390,7 +390,7 @@ Doctor of Philosophy ]]></Description>
 				</Variable>
 				<Variable Class="Parameter">
 					<Id>1574867461211</Id>
-					<Name><![CDATA[C_lyg__Ro]]></Name>
+					<Name><![CDATA[Ro_lyg__с]]></Name>
 					<Description><![CDATA[плотность опилки]]></Description>
 					<Unit>грамм/метр*метр*метр</Unit> 
 					<X>700</X><Y>470</Y>
@@ -417,7 +417,7 @@ Doctor of Philosophy ]]></Description>
 				</Variable>
 				<Variable Class="Parameter">
 					<Id>1575837044480</Id>
-					<Name><![CDATA[M_Ro]]></Name>
+					<Name><![CDATA[Ro_m]]></Name>
 					<Description><![CDATA[плотность мицелия]]></Description>
 					<Unit>грамм/метр*метр*метр</Unit> 
 					<X>260</X><Y>460</Y>
@@ -444,7 +444,7 @@ Doctor of Philosophy ]]></Description>
 				</Variable>
 				<Variable Class="Parameter">
 					<Id>1575838453833</Id>
-					<Name><![CDATA[RoS_M]]></Name>
+					<Name><![CDATA[RoSq_M]]></Name>
 					<Description><![CDATA[Поверхностная плотность мицелия. Поставил от балды как для корней пшеницы]]></Description>
 					<Unit>грамм/метр*метр</Unit> 
 					<X>250</X><Y>50</Y>
@@ -471,7 +471,7 @@ Doctor of Philosophy ]]></Description>
 				</Variable>
 				<Variable Class="Parameter">
 					<Id>1575838927145</Id>
-					<Name><![CDATA[RoS_C]]></Name>
+					<Name><![CDATA[RoSq_C]]></Name>
 					<Description><![CDATA[Поверхностная плотность опилок. Пересчитал из обычной плотности в предположении, что одна опилка - это кубик со стороной 2 мм и все грани открыты. И получилось (8*0.52/24) * 100000 = 175000]]></Description>
 					<Unit>грамм/метр*метр</Unit> 
 					<X>450</X><Y>50</Y>
@@ -503,7 +503,7 @@ Doctor of Philosophy ]]></Description>
 					<PolarityPosition>0.95</PolarityPosition>
 					<Direction><X>0</X><Y>110</Y></Direction>
 					<Id>1574190138381</Id>
-					<Name><![CDATA[S_flac_m - Smyc0_fer_lac]]></Name>
+					<Name><![CDATA[Sub_flac_m - Smyc0_fer_lac]]></Name>
 					<X>170</X><Y>270</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -563,7 +563,7 @@ Doctor of Philosophy ]]></Description>
 					<PolarityPosition>0.95</PolarityPosition>
 					<Direction><X>0</X><Y>110</Y></Direction>
 					<Id>1574190138396</Id>
-					<Name><![CDATA[S_flac_с - M_lyg_fer_C]]></Name>
+					<Name><![CDATA[Sub_flac_с - M_lyg_fer_C]]></Name>
 					<X>530</X><Y>270</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -608,7 +608,7 @@ Doctor of Philosophy ]]></Description>
 					<PolarityPosition>0.95</PolarityPosition>
 					<Direction><X>0</X><Y>-90</Y></Direction>
 					<Id>1574867582022</Id>
-					<Name><![CDATA[C_lyg__Ro - C_lyg_sub_W]]></Name>
+					<Name><![CDATA[Ro_lyg__с - C_lyg_sub_W]]></Name>
 					<X>700</X><Y>470</Y>
 					<Label><X>40</X><Y>-50</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -638,7 +638,7 @@ Doctor of Philosophy ]]></Description>
 					<PolarityPosition>0.95</PolarityPosition>
 					<Direction><X>0</X><Y>-80</Y></Direction>
 					<Id>1575216071805</Id>
-					<Name><![CDATA[M_V - Smyc0_fer_lac]]></Name>
+					<Name><![CDATA[V_m - Smyc0_fer_lac]]></Name>
 					<X>170</X><Y>460</Y>
 					<Label><X>40</X><Y>-50</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -668,7 +668,7 @@ Doctor of Philosophy ]]></Description>
 					<PolarityPosition>0.95</PolarityPosition>
 					<Direction><X>-90</X><Y>0</Y></Direction>
 					<Id>1575837807532</Id>
-					<Name><![CDATA[M_Ro - M_V]]></Name>
+					<Name><![CDATA[Ro_m - V_m]]></Name>
 					<X>260</X><Y>460</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -683,7 +683,7 @@ Doctor of Philosophy ]]></Description>
 					<PolarityPosition>0.95</PolarityPosition>
 					<Direction><X>90</X><Y>0</Y></Direction>
 					<Id>1575837824827</Id>
-					<Name><![CDATA[M_W - M_V]]></Name>
+					<Name><![CDATA[W_m - V_m]]></Name>
 					<X>80</X><Y>460</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -698,7 +698,7 @@ Doctor of Philosophy ]]></Description>
 					<PolarityPosition>0.95</PolarityPosition>
 					<Direction><X>100</X><Y>0</Y></Direction>
 					<Id>1575838275920</Id>
-					<Name><![CDATA[S_M - MC_Seff]]></Name>
+					<Name><![CDATA[Sq_M - MC_Seff]]></Name>
 					<X>250</X><Y>150</Y>
 					<Label><X>40</X><Y>-50</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -713,7 +713,7 @@ Doctor of Philosophy ]]></Description>
 					<PolarityPosition>0.95</PolarityPosition>
 					<Direction><X>-100</X><Y>0</Y></Direction>
 					<Id>1575838283400</Id>
-					<Name><![CDATA[S_lyg_sub_C - MC_Seff]]></Name>
+					<Name><![CDATA[Sq_lyg_sub_C - MC_Seff]]></Name>
 					<X>450</X><Y>150</Y>
 					<Label><X>40</X><Y>-50</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -728,7 +728,7 @@ Doctor of Philosophy ]]></Description>
 					<PolarityPosition>0.95</PolarityPosition>
 					<Direction><X>170</X><Y>-310</Y></Direction>
 					<Id>1575838416096</Id>
-					<Name><![CDATA[M_W - S_M]]></Name>
+					<Name><![CDATA[W_m - Sq_M]]></Name>
 					<X>80</X><Y>460</Y>
 					<Label><X>40</X><Y>-50</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -743,7 +743,7 @@ Doctor of Philosophy ]]></Description>
 					<PolarityPosition>0.95</PolarityPosition>
 					<Direction><X>0</X><Y>100</Y></Direction>
 					<Id>1575838637756</Id>
-					<Name><![CDATA[RoS_M - S_M]]></Name>
+					<Name><![CDATA[RoSq_M - Sq_M]]></Name>
 					<X>250</X><Y>50</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -758,7 +758,7 @@ Doctor of Philosophy ]]></Description>
 					<PolarityPosition>0.95</PolarityPosition>
 					<Direction><X>-250</X><Y>-230</Y></Direction>
 					<Id>1575838853176</Id>
-					<Name><![CDATA[C_lyg_sub_W - S_lyg_sub_C]]></Name>
+					<Name><![CDATA[C_lyg_sub_W - Sq_lyg_sub_C]]></Name>
 					<X>700</X><Y>380</Y>
 					<Label><X>40</X><Y>-50</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -773,7 +773,7 @@ Doctor of Philosophy ]]></Description>
 					<PolarityPosition>0.95</PolarityPosition>
 					<Direction><X>0</X><Y>100</Y></Direction>
 					<Id>1575839469589</Id>
-					<Name><![CDATA[RoS_C - S_lyg_sub_C]]></Name>
+					<Name><![CDATA[RoSq_C - Sq_lyg_sub_C]]></Name>
 					<X>450</X><Y>50</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
@@ -998,16 +998,16 @@ Doctor of Philosophy ]]></Description>
 					<ParameterName><![CDATA[C_V]]></ParameterName>
 				</Parameter>
 				<Parameter>
-					<ParameterName><![CDATA[C_lyg__Ro]]></ParameterName>
+					<ParameterName><![CDATA[Ro_lyg__с]]></ParameterName>
 				</Parameter>
 				<Parameter>
-					<ParameterName><![CDATA[M_Ro]]></ParameterName>
+					<ParameterName><![CDATA[Ro_m]]></ParameterName>
 				</Parameter>
 				<Parameter>
-					<ParameterName><![CDATA[RoS_M]]></ParameterName>
+					<ParameterName><![CDATA[RoSq_M]]></ParameterName>
 				</Parameter>
 				<Parameter>
-					<ParameterName><![CDATA[RoS_C]]></ParameterName>
+					<ParameterName><![CDATA[RoSq_C]]></ParameterName>
 				</Parameter>
 			</Parameters>			
 			<PresentationProperties>
