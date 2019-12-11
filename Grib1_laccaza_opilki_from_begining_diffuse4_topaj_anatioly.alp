@@ -183,7 +183,7 @@
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties External="false" Constant="false" Array="false">
-						<Formula><![CDATA[50]]></Formula>
+						<Formula><![CDATA[0.585]]></Formula>
 						<Value><![CDATA[0]]></Value>
 						<Color/>
 					</Properties>
@@ -351,7 +351,7 @@ Doctor of Philosophy ]]></Description>
 						<UnitType><![CDATA[NONE]]></UnitType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[0.08]]></Code>
+							<Code><![CDATA[0.048]]></Code>
 						</DefaultValue>
 						<ParameterEditor>
 							<Id>1574190138406</Id>
@@ -377,7 +377,7 @@ Doctor of Philosophy ]]></Description>
 						<UnitType><![CDATA[NONE]]></UnitType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[ 0.001]]></Code>
+							<Code><![CDATA[ 0.000001]]></Code>
 						</DefaultValue>
 						<ParameterEditor>
 							<Id>1574199016610</Id>
@@ -430,7 +430,7 @@ Doctor of Philosophy ]]></Description>
 						<UnitType><![CDATA[NONE]]></UnitType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[90000]]></Code>
+							<Code><![CDATA[900000]]></Code>
 						</DefaultValue>
 						<ParameterEditor>
 							<Id>1575837044478</Id>
@@ -823,23 +823,8 @@ Doctor of Philosophy ]]></Description>
 					<LineWidth>3</LineWidth>
 					<Delay>false</Delay>
 				</Link>
-				<Link TargetId="1574190138529" Polarity="null">
-					<Height>20.0</Height>
-					<PolarityPosition>0.95</PolarityPosition>
-					<Direction><X>260</X><Y>-30</Y></Direction>
-					<Id>1576065772531</Id>
-					<Name><![CDATA[ - W_flac_m]]></Name>
-					<X>60</X><Y>490</Y>
-					<Label><X>40</X><Y>-50</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<Color>-65536</Color>
-					<LineWidth>3</LineWidth>
-					<Delay>false</Delay>
-				</Link>
 				<Link SourceId="1576065168504" TargetId="1574190138529" Polarity="null">
-					<Height>20.0</Height>
+					<Height>0.0</Height>
 					<PolarityPosition>0.95</PolarityPosition>
 					<Direction><X>270</X><Y>-30</Y></Direction>
 					<Id>1576088492520</Id>
@@ -849,8 +834,8 @@ Doctor of Philosophy ]]></Description>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
-					<Color/>
-					<LineWidth>1</LineWidth>
+					<Color>-65536</Color>
+					<LineWidth>3</LineWidth>
 					<Delay>false</Delay>
 				</Link>
 			</Dependences>
