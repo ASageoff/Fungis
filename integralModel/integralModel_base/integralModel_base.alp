@@ -1769,7 +1769,7 @@ MAOBING TU таблица 22]]></Description>
 						<UnitType><![CDATA[NONE]]></UnitType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[7]]></Code>
+							<Code><![CDATA[6]]></Code>
 						</DefaultValue>
 						<ParameterEditor>
 							<Id>1584364030631</Id>
@@ -3228,7 +3228,8 @@ Shounak Pal, Pooja Sinha, Snigdha Bose* ]]></Description>
 							</ValueColumnReference>
 					</ValuesQuery>
 // arguments and values
-					<Argument><![CDATA[2.5]]></Argument>
+					<Argument><![CDATA[1.0]]></Argument>
+					<Argument><![CDATA[2.0]]></Argument>
 					<Argument><![CDATA[3.0]]></Argument>
 					<Argument><![CDATA[4.0]]></Argument>
 					<Argument><![CDATA[5.0]]></Argument>
@@ -3236,7 +3237,6 @@ Shounak Pal, Pooja Sinha, Snigdha Bose* ]]></Description>
 					<Argument><![CDATA[7.0]]></Argument>
 					<Argument><![CDATA[8.0]]></Argument>
 					<Argument><![CDATA[9.0]]></Argument>
-					<Argument><![CDATA[10.0]]></Argument>
 					<Value><![CDATA[10.0]]></Value>
 					<Value><![CDATA[20.0]]></Value>
 					<Value><![CDATA[45.0]]></Value>
@@ -3279,8 +3279,8 @@ Production_of_Laccase_from_Pleurotus_sajor_caju_in_liquid_state_fermentation_and
 					<Argument><![CDATA[70.0]]></Argument>
 					<Argument><![CDATA[80.0]]></Argument>
 					<Argument><![CDATA[90.0]]></Argument>
-					<Argument><![CDATA[20.0]]></Argument>
-					<Argument><![CDATA[10.0]]></Argument>
+					<Argument><![CDATA[91.0]]></Argument>
+					<Argument><![CDATA[95.0]]></Argument>
 					<Value><![CDATA[20.0]]></Value>
 					<Value><![CDATA[65.0]]></Value>
 					<Value><![CDATA[80.0]]></Value>
@@ -3321,20 +3321,22 @@ Kalaimahan  Theodore  and  Tapobrata  Panda ]]></Description>
 							</ValueColumnReference>
 					</ValuesQuery>
 // arguments and values
-					<Argument><![CDATA[3.0]]></Argument>
+					<Argument><![CDATA[1.0]]></Argument>
 					<Argument><![CDATA[4.0]]></Argument>
-					<Argument><![CDATA[5.0]]></Argument>
+					<Argument><![CDATA[3.0]]></Argument>
 					<Argument><![CDATA[6.0]]></Argument>
-					<Argument><![CDATA[7.0]]></Argument>
+					<Argument><![CDATA[5.0]]></Argument>
 					<Argument><![CDATA[2.0]]></Argument>
-					<Argument><![CDATA[11.0]]></Argument>
+					<Argument><![CDATA[7.0]]></Argument>
+					<Argument><![CDATA[8.0]]></Argument>
 					<Value><![CDATA[0.2161254]]></Value>
 					<Value><![CDATA[0.3618754]]></Value>
 					<Value><![CDATA[0.3876254]]></Value>
-					<Value><![CDATA[0.2933754]]></Value>
-					<Value><![CDATA[0.1791254000000001]]></Value>
+					<Value><![CDATA[0.3933754]]></Value>
+					<Value><![CDATA[0.3791254000000001]]></Value>
 					<Value><![CDATA[0.2]]></Value>
-					<Value><![CDATA[0.09]]></Value>
+					<Value><![CDATA[0.1]]></Value>
+					<Value><![CDATA[0.05]]></Value>
 				</TableFunction>
 				<TableFunction AccessType="public" StaticFunction="false">
 					<Id>1584698160934</Id>
